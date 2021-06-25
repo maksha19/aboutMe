@@ -1,10 +1,19 @@
-.App {
+.text-center {
   text-align: center;
+  color: #fff;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
