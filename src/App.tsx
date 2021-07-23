@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./random.jpg";
 import "./App.css";
 import { Card, Container, Button } from "react-bootstrap";
+//const logo = require("../public/logo512.png");
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
             <Card.Title className="text-center">about Me</Card.Title>
           </Card.Body>
         </Card>
+        <div style={{ height: "100px", width: "100px" }}>
+          <img src={logo} alt="logo" />
+        </div>
       </Container>
     </div>
   );
