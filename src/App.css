@@ -1,6 +1,7 @@
-.text-center {
-  text-align: center;
+.text-end {
+  text-align: end;
   color: #fff;
+  height: 50%;
 }
 
 .App-logo {
@@ -11,9 +12,23 @@
 .center-screen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.profile {
+  height: 90%;
+  width: 100%;
+}
+
+.profile-circle {
+  height: 10rem !important;
+  width: 10rem !important;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.profile-text {
 }
 
 @media (prefers-reduced-motion: no-preference) {
