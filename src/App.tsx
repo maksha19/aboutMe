@@ -35,7 +35,7 @@ function App() {
                 </div>
               </div>
               <div style={{ height: "70%" }} className="row">
-                <div className="col-sm-10 col-md-3 col-ls-5  text-center">
+                <div className="col-sm-12 col-md-3 col-ls-5  text-center">
                   <div className="profile-circle ">
                     <img
                       className="profile-circle "
@@ -55,7 +55,7 @@ function App() {
                     Manikandan Shanmugam
                   </div>
                 </div>
-                <div className=" align-self-center col-sm-9 col-md-9 col-ls-9">
+                <div className=" align-self-center col-sm-12 col-md-9 col-ls-9">
                   <div
                     style={{ color: "white" }}
                     className="profile-text text-wrap"
