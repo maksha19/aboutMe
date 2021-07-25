@@ -80,7 +80,7 @@ function App() {
                       <BiHash />
                     </IconContext.Provider>
                     Software Engineer | Bookworm | Author | Public Speaker |
-                    Innovators | Volunteer
+                    Innovator | Volunteer
                   </div>
                 </div>
               </div>
