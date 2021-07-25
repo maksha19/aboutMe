@@ -7,6 +7,7 @@
   text-align: end;
   color: #fff;
   height: 50%;
+  font: normal normal bold 18px/1.4em montserrat, sans-serif;
 }
 
 .App-logo {
@@ -32,7 +33,23 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+.profile-name {
+  font: normal normal bold 24px/1.4em montserrat, sans-serif !important;
+  color: #fff;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  height: 10% !important;
+}
 .profile-text {
+  font: normal normal bold 17px/1.4em montserrat, sans-serif;
+  color: #fff;
+}
+
+.profile-tags {
+  font: normal normal 600 17px/1.4em montserrat, sans-serif;
+  color: #fff;
+  margin-top: 2rem !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,7 +83,7 @@
 }
 
 /* Small screen / phone  */
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .customize-container {
     width: 100vw !important;
     margin-top: 0vh;
@@ -75,7 +92,7 @@
     border-radius: 0px !important;
   }
 }
-
+/* 
 @media (min-width: 500px) {
   .customize-container {
     width: 90vw !important;
@@ -84,4 +101,6 @@
   .card {
     border-radius: 0.25rem !important;
   }
-}
+} */
+
+/* #a6d1d4 */

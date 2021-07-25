@@ -43,29 +43,18 @@ function App() {
                       alt="test"
                     />
                   </div>
-                  <div
-                    style={{
-                      height: "10%",
-                      color: "white",
-                      marginBottom: "1rem",
-                      marginTop: "1rem",
-                    }}
-                    className=""
-                  >
-                    Manikandan Shanmugam
-                  </div>
+                  <div className="profile-name">Manikandan Shanmugam</div>
                 </div>
                 <div className=" align-self-center col-sm-12 col-md-9 col-ls-9">
-                  <div
-                    style={{ color: "white" }}
-                    className="profile-text text-wrap"
-                  >
-                    <Card.Title>About me</Card.Title>
-                    Strong engineering professional with a Post Graduate focused
-                    in Graduate Diploma in Systems Analysis from National
-                    University of Singapore. Experienced Software Engineer with
-                    a demonstrated history of working in the Manufacturing and
+                  <div className="profile-text text-wrap">
+                    Strong engineering professional with a Post Graduate in
+                    Systems Analysis from National University of Singapore. As a
+                    Software Engineer with experience in the Manufacturing and
                     Gaming industry.
+                  </div>
+                  <div className="profile-tags">
+                    Software Engineer | Bookworm | Author | Public Speaker |
+                    Innovators | Volunteer
                   </div>
                 </div>
               </div>
