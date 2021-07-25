@@ -42,12 +42,12 @@
   height: 10% !important;
 }
 .profile-text {
-  font: normal normal bold 17px/1.4em montserrat, sans-serif;
+  /* font: normal normal 700 19px/1.4em montserrat, sans-serif; */
   color: #fff;
 }
 
 .profile-tags {
-  font: normal normal 600 17px/1.4em montserrat, sans-serif;
+  font: normal normal 600 15px/1.4em montserrat, sans-serif;
   color: #fff;
   margin-top: 2rem !important;
 }

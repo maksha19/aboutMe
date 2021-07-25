@@ -3,6 +3,8 @@ import "./App.css";
 import { IconContext } from "react-icons";
 import { Card, Container } from "react-bootstrap";
 import { SiMinutemailer, SiWhatsapp } from "react-icons/si";
+import { BiHash } from "react-icons/bi";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 function App() {
   return (
@@ -39,7 +41,7 @@ function App() {
                   <div className="profile-circle ">
                     <img
                       className="profile-circle "
-                      src={process.env.PUBLIC_URL + "/random.jpg"}
+                      src={process.env.PUBLIC_URL + "/profile.jpeg"}
                       alt="test"
                     />
                   </div>
@@ -47,12 +49,36 @@ function App() {
                 </div>
                 <div className=" align-self-center col-sm-12 col-md-9 col-ls-9">
                   <div className="profile-text text-wrap">
+                    <IconContext.Provider
+                      value={{
+                        size: "2rem",
+                        style: { marginRight: ".5rem" },
+                      }}
+                    >
+                      <FaQuoteLeft />
+                    </IconContext.Provider>
                     Strong engineering professional with a Post Graduate in
                     Systems Analysis from National University of Singapore. As a
                     Software Engineer with experience in the Manufacturing and
-                    Gaming industry.
+                    Gaming industry and Government Technology Agency
+                    <IconContext.Provider
+                      value={{
+                        size: "2rem",
+                        style: { marginLeft: ".5rem" },
+                      }}
+                    >
+                      <FaQuoteRight />
+                    </IconContext.Provider>
                   </div>
                   <div className="profile-tags">
+                    <IconContext.Provider
+                      value={{
+                        size: "2rem",
+                        style: { marginRight: ".1rem" },
+                      }}
+                    >
+                      <BiHash />
+                    </IconContext.Provider>
                     Software Engineer | Bookworm | Author | Public Speaker |
                     Innovators | Volunteer
                   </div>
