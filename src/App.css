@@ -104,3 +104,17 @@
 } */
 
 /* #a6d1d4 */
+
+/* Body styles */
+.body-row-center {
+  justify-content: center;
+}
+
+.my-club-role {
+  margin-left: 10%;
+}
+
+.activity-list-wrapper {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
