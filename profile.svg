@@ -1,0 +1,14 @@
+<svg version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 200 200" enable-background="new 0 0 100 100" xml:space="preserve">
+  <style>
+    .small { font: italic 120px sans-serif; }
+  </style>
+  <g>
+    <circle cx="100" cy="100"  r="99" fill="red"></circle>
+   <text x="0" y="70%" class="small" fill="#fff">MS</text>
+  </g>
+</svg>
+
+
+   
+
