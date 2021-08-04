@@ -12,7 +12,7 @@ import { GiCargoShip, GiShakingHands } from "react-icons/gi";
 const Body = () => {
   return (
     <Container>
-      <div style={{ marginTop: "2rem" }}>
+      <div style={{ paddingTop: "2rem" }}>
         <div className="row body-row-center">
           <div
             style={{ marginBottom: "2rem" }}
@@ -20,11 +20,11 @@ const Body = () => {
           >
             <Card
               style={{
-                backgroundColor: "#1793bb",
                 height: "100%",
+                backgroundColor: "#eee0d1",
               }}
             >
-              <Card.Body>
+              <div className="activity-header-wrapper">
                 <IconContext.Provider
                   value={{
                     size: "4rem",
@@ -34,6 +34,8 @@ const Body = () => {
                   <FaLaptop />
                 </IconContext.Provider>
                 <div>working Experience</div>
+              </div>
+              <Card.Body>
                 <div>
                   <div>Government Technology Agency(GovTech-Singapore) </div>
                 </div>
@@ -55,12 +57,11 @@ const Body = () => {
           >
             <Card
               style={{
-                backgroundColor: "#1793bb",
                 height: "100%",
+                backgroundColor: "#eee0d1",
               }}
             >
-              <Card.Body>
-                <div>Skill</div>
+              <div className="activity-header-wrapper">
                 <IconContext.Provider
                   value={{
                     size: "4rem",
@@ -69,7 +70,9 @@ const Body = () => {
                 >
                   <GiCargoShip />
                 </IconContext.Provider>
-              </Card.Body>
+                <div>Skill</div>
+              </div>
+              <Card.Body>csdcsdl</Card.Body>
             </Card>
           </div>
           <div
@@ -78,12 +81,12 @@ const Body = () => {
           >
             <Card
               style={{
-                backgroundColor: "#1793bb",
                 height: "100%",
+                backgroundColor: "#455c86",
+                color: "white",
               }}
             >
-              <Card.Body>
-                <div>Education</div>
+              <div className="activity-header-wrapper">
                 <IconContext.Provider
                   value={{
                     size: "4rem",
@@ -92,6 +95,9 @@ const Body = () => {
                 >
                   <FaGraduationCap />
                 </IconContext.Provider>
+                <div>Education</div>
+              </div>
+              <Card.Body>
                 <div>
                   <div>
                     National University of Singapore Post graduate in system
@@ -111,14 +117,8 @@ const Body = () => {
             style={{ marginBottom: "2rem" }}
             className=" col-sm-12 col-md-6  col-6 col-11"
           >
-            <Card
-              style={{
-                backgroundColor: "#1793bb",
-                height: "100%",
-              }}
-            >
-              <Card.Body>
-                <div>Activity</div>
+            <Card style={{ height: "100%", backgroundColor: "#eee0d1" }}>
+              <div className="activity-header-wrapper">
                 <IconContext.Provider
                   value={{
                     size: "4rem",
@@ -127,12 +127,15 @@ const Body = () => {
                 >
                   <GiShakingHands />
                 </IconContext.Provider>
+                <div>Activity</div>
+              </div>
+              <Card.Body>
                 <div className="row">
                   <div className="activity-list-wrapper">
                     <IconContext.Provider
                       value={{
                         size: "1rem",
-                        style: { marginRight: ".5rem", color: "white" },
+                        style: { marginRight: ".5rem", color: "#000" },
                       }}
                     >
                       <FaDotCircle />
@@ -144,7 +147,7 @@ const Body = () => {
                         <IconContext.Provider
                           value={{
                             size: ".7rem",
-                            style: { marginRight: ".5rem", color: "white" },
+                            style: { marginRight: ".5rem", color: "#000" },
                           }}
                         >
                           <FaStarOfLife />
@@ -155,7 +158,7 @@ const Body = () => {
                         <IconContext.Provider
                           value={{
                             size: ".7rem",
-                            style: { marginRight: ".5rem", color: "white" },
+                            style: { marginRight: ".5rem", color: "#000" },
                           }}
                         >
                           <FaStarOfLife />
@@ -166,7 +169,7 @@ const Body = () => {
                         <IconContext.Provider
                           value={{
                             size: ".7rem",
-                            style: { marginRight: ".5rem", color: "white" },
+                            style: { marginRight: ".5rem", color: "#000" },
                           }}
                         >
                           <FaStarOfLife />
@@ -179,7 +182,7 @@ const Body = () => {
                     <IconContext.Provider
                       value={{
                         size: "1rem",
-                        style: { marginRight: ".5rem", color: "white" },
+                        style: { marginRight: ".5rem", color: "#000" },
                       }}
                     >
                       <FaDotCircle />
@@ -190,7 +193,7 @@ const Body = () => {
                     <IconContext.Provider
                       value={{
                         size: "1rem",
-                        style: { marginRight: ".5rem", color: "white" },
+                        style: { marginRight: ".5rem", color: "#000" },
                       }}
                     >
                       <FaDotCircle />
@@ -201,7 +204,7 @@ const Body = () => {
                     <IconContext.Provider
                       value={{
                         size: "1rem",
-                        style: { marginRight: ".5rem", color: "white" },
+                        style: { marginRight: ".5rem", color: "#000" },
                       }}
                     >
                       <FaDotCircle />
@@ -212,7 +215,7 @@ const Body = () => {
                     <IconContext.Provider
                       value={{
                         size: "1rem",
-                        style: { marginRight: ".5rem", color: "white" },
+                        style: { marginRight: ".5rem", color: "#000" },
                       }}
                     >
                       <FaDotCircle />

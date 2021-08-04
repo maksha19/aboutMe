@@ -4,7 +4,7 @@ import { Card, Container } from "react-bootstrap";
 const Footer = () => {
   return (
     <Container>
-      <div className="">footer</div>;
+      <div className="">in dev stage</div>;
     </Container>
   );
 };
