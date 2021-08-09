@@ -6,12 +6,16 @@ import {
   FaLaptop,
   FaDotCircle,
   FaStarOfLife,
+  FaHandPointRight,
 } from "react-icons/fa";
 import { GiCargoShip, GiShakingHands } from "react-icons/gi";
+import { BsGearWideConnected } from "react-icons/bs";
+import { FcIphone } from "react-icons/fc";
+import { GoBrowser } from "react-icons/go";
 
 const Body = () => {
   return (
-    <Container>
+    <Container style={{ color: "white" }}>
       <div style={{ paddingTop: "2rem" }}>
         <div className="row body-row-center">
           <div
@@ -21,7 +25,7 @@ const Body = () => {
             <Card
               style={{
                 height: "100%",
-                backgroundColor: "#eee0d1",
+                backgroundColor: "#455c86",
               }}
             >
               <div className="activity-header-wrapper">
@@ -33,20 +37,51 @@ const Body = () => {
                 >
                   <FaLaptop />
                 </IconContext.Provider>
-                <div>working Experience</div>
+                <div className="activity-header">working Experience</div>
               </div>
               <Card.Body>
-                <div>
-                  <div>Government Technology Agency(GovTech-Singapore) </div>
+                <div className="activity-row-wrapper">
+                  <div className="activity-body-icon">
+                    <IconContext.Provider
+                      value={{
+                        size: "2rem",
+                      }}
+                    >
+                      <FcIphone />
+                    </IconContext.Provider>
+                  </div>
+                  <div className="activity-body-text">
+                    Government Technology Agency(GovTech-Singapore)
+                  </div>
                 </div>
-                <div>
-                  <div>
+                <div className="activity-row-wrapper">
+                  <div className="activity-body-icon">
+                    <IconContext.Provider
+                      value={{
+                        size: "2rem",
+                      }}
+                    >
+                      <GoBrowser />
+                    </IconContext.Provider>
+                  </div>
+                  <div className="activity-body-text">
                     Genting International Gaming & Resort Technology PTE
                     LTD(GIGRT)
                   </div>
                 </div>
-                <div>
-                  <div>Systems on Silicon Manufacturing(SSMC) </div>
+                <div className="activity-row-wrapper">
+                  <div className="activity-body-icon">
+                    <IconContext.Provider
+                      value={{
+                        size: "2rem",
+                      }}
+                    >
+                      <BsGearWideConnected />
+                    </IconContext.Provider>
+                  </div>
+                  <div className="activity-body-text">
+                    Systems on Silicon Manufacturing(SSMC)
+                  </div>
                 </div>
               </Card.Body>
             </Card>
@@ -58,19 +93,23 @@ const Body = () => {
             <Card
               style={{
                 height: "100%",
-                backgroundColor: "#eee0d1",
+                backgroundColor: "#455c86",
+                color: "#fff",
               }}
             >
-              <div className="activity-header-wrapper">
+              <div
+                style={{ backgroundColor: "#455c86" }}
+                className="activity-header-wrapper"
+              >
                 <IconContext.Provider
                   value={{
                     size: "4rem",
-                    style: { marginRight: ".5rem", color: "white" },
+                    style: { marginRight: ".5rem", color: "#fff" },
                   }}
                 >
                   <GiCargoShip />
                 </IconContext.Provider>
-                <div>Skill</div>
+                <div className="activity-header">Skill</div>
               </div>
               <Card.Body>csdcsdl</Card.Body>
             </Card>
@@ -83,31 +122,34 @@ const Body = () => {
               style={{
                 height: "100%",
                 backgroundColor: "#455c86",
-                color: "white",
+                color: "#fff",
               }}
             >
-              <div className="activity-header-wrapper">
+              <div
+                style={{ backgroundColor: "#455c86" }}
+                className="activity-header-wrapper"
+              >
                 <IconContext.Provider
                   value={{
                     size: "4rem",
-                    style: { marginRight: ".5rem", color: "white" },
+                    style: { marginRight: ".5rem", color: "#fff" },
                   }}
                 >
                   <FaGraduationCap />
                 </IconContext.Provider>
-                <div>Education</div>
+                <div className="activity-header">Education</div>
               </div>
               <Card.Body>
-                <div>
-                  <div>
-                    National University of Singapore Post graduate in system
-                    analysis ( 2018-2019) With 4/5 CGP
+                <div className="activity-row-wrapper">
+                  <div className="activity-body-text">
+                    Post graduate in system analysis from National University of
+                    Singapore (2018-2019)
                   </div>
                 </div>
-                <div>
-                  <div>
-                    ANNA University Bachelor of Mechanical Engineering (2012-
-                    2016) with 7.78/10 CGP.
+                <div className="activity-row-wrapper">
+                  <div className="activity-body-text">
+                    Bachelor of Mechanical Engineering from Anna University,
+                    chennai (2012- 2016)
                   </div>
                 </div>
               </Card.Body>
@@ -117,7 +159,7 @@ const Body = () => {
             style={{ marginBottom: "2rem" }}
             className=" col-sm-12 col-md-6  col-6 col-11"
           >
-            <Card style={{ height: "100%", backgroundColor: "#eee0d1" }}>
+            <Card style={{ height: "100%", backgroundColor: "#455c86" }}>
               <div className="activity-header-wrapper">
                 <IconContext.Provider
                   value={{
@@ -127,101 +169,129 @@ const Body = () => {
                 >
                   <GiShakingHands />
                 </IconContext.Provider>
-                <div>Activity</div>
+                <div className="activity-header">Activity</div>
               </div>
               <Card.Body>
                 <div className="row">
-                  <div className="activity-list-wrapper">
-                    <IconContext.Provider
-                      value={{
-                        size: "1rem",
-                        style: { marginRight: ".5rem", color: "#000" },
-                      }}
-                    >
-                      <FaDotCircle />
-                    </IconContext.Provider>
-                    Executive committee member in Tampines Tamil Toastmaster
-                    club.
-                    <div className="my-club-role">
-                      <div>
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaHandPointRight />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Executive committee member in Tampines Tamil Toastmaster
+                      club.
+                    </div>
+                  </div>
+                  <div className="my-club-role">
+                    <div className="activity-row-wrapper">
+                      <div className="activity-body-icon">
                         <IconContext.Provider
                           value={{
-                            size: ".7rem",
-                            style: { marginRight: ".5rem", color: "#000" },
+                            size: "1rem",
                           }}
                         >
                           <FaStarOfLife />
                         </IconContext.Provider>
+                      </div>
+                      <div className="activity-body-text">
                         President 2021-2022
                       </div>
-                      <div>
+                    </div>
+                    <div className="activity-row-wrapper">
+                      <div className="activity-body-icon">
                         <IconContext.Provider
                           value={{
-                            size: ".7rem",
-                            style: { marginRight: ".5rem", color: "#000" },
+                            size: "1rem",
                           }}
                         >
                           <FaStarOfLife />
                         </IconContext.Provider>
+                      </div>
+                      <div className="activity-body-text">
                         Vice President 2020-2021
                       </div>
-                      <div>
+                    </div>
+                    <div className="activity-row-wrapper">
+                      <div className="activity-body-icon">
                         <IconContext.Provider
                           value={{
-                            size: ".7rem",
-                            style: { marginRight: ".5rem", color: "#000" },
+                            size: "1rem",
                           }}
                         >
                           <FaStarOfLife />
                         </IconContext.Provider>
+                      </div>
+                      <div className="activity-body-text">
                         Secretary 2019-2020
                       </div>
                     </div>
                   </div>
-                  <div className="activity-list-wrapper">
-                    <IconContext.Provider
-                      value={{
-                        size: "1rem",
-                        style: { marginRight: ".5rem", color: "#000" },
-                      }}
-                    >
-                      <FaDotCircle />
-                    </IconContext.Provider>
-                    Volunteering in District-80 Toastmaster International Event.
+
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaHandPointRight />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Volunteering in District-80 Toastmaster International
+                      Event.
+                    </div>
                   </div>
-                  <div className="activity-list-wrapper">
-                    <IconContext.Provider
-                      value={{
-                        size: "1rem",
-                        style: { marginRight: ".5rem", color: "#000" },
-                      }}
-                    >
-                      <FaDotCircle />
-                    </IconContext.Provider>
-                    Volunteer in chess event organized by Tampines CC Singapore
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaHandPointRight />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Volunteer in chess event organized by Tampines CC
+                      Singapore
+                    </div>
                   </div>
-                  <div className="activity-list-wrapper">
-                    <IconContext.Provider
-                      value={{
-                        size: "1rem",
-                        style: { marginRight: ".5rem", color: "#000" },
-                      }}
-                    >
-                      <FaDotCircle />
-                    </IconContext.Provider>
-                    Volunteering in kids event organized by Indian.SG Singapore
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaHandPointRight />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Volunteering in kids event organized by Indian.SG
+                      Singapore
+                    </div>
                   </div>
-                  <div>
-                    <IconContext.Provider
-                      value={{
-                        size: "1rem",
-                        style: { marginRight: ".5rem", color: "#000" },
-                      }}
-                    >
-                      <FaDotCircle />
-                    </IconContext.Provider>
-                    Volunteering in youth event organized by Tamil Language and
-                    Cultural Society Singapore
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaHandPointRight />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Volunteering in youth event organized by Tamil Language
+                      and Cultural Society Singapore
+                    </div>
                   </div>
                 </div>
               </Card.Body>

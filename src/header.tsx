@@ -12,7 +12,7 @@ const Header = () => {
       <div className="customize-container">
         <Card
           style={{
-            backgroundColor: "#1793bb",
+            backgroundColor: "#b04b42",
             height: "100%",
           }}
         >
@@ -56,10 +56,10 @@ const Header = () => {
                   >
                     <FaQuoteLeft />
                   </IconContext.Provider>
-                  Strong engineering professional with a Post Graduate in
-                  Systems Analysis from National University of Singapore. A
-                  Software Engineer with experience in the Manufacturing and
-                  Gaming industry and Government Technology Agency
+                  A strong engineering professional with a Post Graduate in
+                  Systems Analysis from National University of Singapore. Has a
+                  Software Engineering experience in the Manufacturing, Gaming
+                  industry and Government Technology Agency Singapore
                   <IconContext.Provider
                     value={{
                       size: "2rem",
