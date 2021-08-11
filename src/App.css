@@ -130,6 +130,7 @@
   flex-direction: row;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .activity-body-icon {
@@ -144,7 +145,7 @@
   font: normal normal 600 15px/1.4em sans-serif;
   display: inline-flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .my-club-role {

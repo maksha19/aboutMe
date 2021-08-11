@@ -7,11 +7,21 @@ import {
   FaDotCircle,
   FaStarOfLife,
   FaHandPointRight,
+  FaReact,
+  FaJava,
+  FaAdobe,
 } from "react-icons/fa";
-import { GiCargoShip, GiShakingHands } from "react-icons/gi";
+import {
+  GiCargoShip,
+  GiShakingHands,
+  GiBookshelf,
+  GiWhiteBook,
+} from "react-icons/gi";
 import { BsGearWideConnected } from "react-icons/bs";
 import { FcIphone } from "react-icons/fc";
 import { GoBrowser } from "react-icons/go";
+import { RiQuillPenFill } from "react-icons/ri";
+import { IoLogoNodejs } from "react-icons/io";
 
 const Body = () => {
   return (
@@ -40,47 +50,49 @@ const Body = () => {
                 <div className="activity-header">working Experience</div>
               </div>
               <Card.Body>
-                <div className="activity-row-wrapper">
-                  <div className="activity-body-icon">
-                    <IconContext.Provider
-                      value={{
-                        size: "2rem",
-                      }}
-                    >
-                      <FcIphone />
-                    </IconContext.Provider>
+                <div className="row">
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FcIphone />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Government Technology Agency(GovTech-Singapore)
+                    </div>
                   </div>
-                  <div className="activity-body-text">
-                    Government Technology Agency(GovTech-Singapore)
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <GoBrowser />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Genting International Gaming & Resort Technology PTE
+                      LTD(GIGRT)
+                    </div>
                   </div>
-                </div>
-                <div className="activity-row-wrapper">
-                  <div className="activity-body-icon">
-                    <IconContext.Provider
-                      value={{
-                        size: "2rem",
-                      }}
-                    >
-                      <GoBrowser />
-                    </IconContext.Provider>
-                  </div>
-                  <div className="activity-body-text">
-                    Genting International Gaming & Resort Technology PTE
-                    LTD(GIGRT)
-                  </div>
-                </div>
-                <div className="activity-row-wrapper">
-                  <div className="activity-body-icon">
-                    <IconContext.Provider
-                      value={{
-                        size: "2rem",
-                      }}
-                    >
-                      <BsGearWideConnected />
-                    </IconContext.Provider>
-                  </div>
-                  <div className="activity-body-text">
-                    Systems on Silicon Manufacturing(SSMC)
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <BsGearWideConnected />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Systems on Silicon Manufacturing(SSMC)
+                    </div>
                   </div>
                 </div>
               </Card.Body>
@@ -111,7 +123,67 @@ const Body = () => {
                 </IconContext.Provider>
                 <div className="activity-header">Skill</div>
               </div>
-              <Card.Body>csdcsdl</Card.Body>
+              <Card.Body>
+                <div className="row">
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <IoLogoNodejs />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Node.js, Serverless architecture, Amazon Web Services(
+                      Lambda, DynamoDB, S3)
+                    </div>
+                  </div>
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaReact />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      React Expo, React Js
+                    </div>
+                  </div>
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <FaJava />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Java 8, SQL Server, MySQL, Apache Kafka
+                    </div>
+                  </div>
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <RiQuillPenFill />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Figma, Adobe Illustrator, Adobe XD
+                    </div>
+                  </div>
+                </div>
+              </Card.Body>
             </Card>
           </div>
           <div
@@ -140,16 +212,36 @@ const Body = () => {
                 <div className="activity-header">Education</div>
               </div>
               <Card.Body>
-                <div className="activity-row-wrapper">
-                  <div className="activity-body-text">
-                    Post graduate in system analysis from National University of
-                    Singapore (2018-2019)
+                <div className="row">
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <GiBookshelf />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Post graduate in system analysis from National University
+                      of Singapore (2018-2019)
+                    </div>
                   </div>
-                </div>
-                <div className="activity-row-wrapper">
-                  <div className="activity-body-text">
-                    Bachelor of Mechanical Engineering from Anna University,
-                    chennai (2012- 2016)
+                  <div className="activity-row-wrapper">
+                    <div className="activity-body-icon">
+                      <IconContext.Provider
+                        value={{
+                          size: "2rem",
+                        }}
+                      >
+                        <GiWhiteBook />
+                      </IconContext.Provider>
+                    </div>
+                    <div className="activity-body-text">
+                      Bachelor of Mechanical Engineering from Anna University,
+                      chennai (2012- 2016)
+                    </div>
                   </div>
                 </div>
               </Card.Body>
