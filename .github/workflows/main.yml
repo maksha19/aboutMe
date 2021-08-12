@@ -37,5 +37,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: testing
+        env:
+          SUPER_SECRET: ${{ secrets.TEST }}
         run: |
-          echo ${{ secrets.TEST }}
+          echo ${{ env.SUPER_SECRET }}
