@@ -38,4 +38,4 @@ jobs:
           echo test, and deploy your project.
       - name: testing
         run: |
-          example-command "$env:SUPER_SECRET"
+          echo ${{ secrets.TEST }}
