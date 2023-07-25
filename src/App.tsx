@@ -43,9 +43,9 @@ function App() {
           <div className='w-full sm:w-2/5 h-full flex bg-[#e6dace]' ></div>
           <div className='w-0 sm:w-3/5  h-full' ></div>
         </div>
-        <div className='w-full absolute top-1/4 left-0 grid grid-cols-6' >
-          <div className='col-start-3 col-span-2'>
-            <div className=''>
+        <div className='w-full absolute top-1/4 grid sm:grid-cols-12 grid-cols-8 gap-4'  >
+          <div className='sm:col-start-4 sm:col-span-3 col-start-2 col-span-6'>
+            <div className='w-full'>
               <div className="max-w-xs bg-[#f4ece6] shadow-md rounded-lg overflow-hidden">
                 <img className="object-cover h-48 w-full" src="image.jpg" alt="Card Image" />
                 <div className="p-4">
@@ -58,8 +58,10 @@ function App() {
               </div>
             </div>
           </div>
+          <div className='sm:col-start-7 col-start-4'>
+            <p>Hello</p>
+          </div>
         </div>
-
       </div>
     </div>
   );
