@@ -38,13 +38,13 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='w-full h-screen'>
+      <div className='w-full h-screen relative'>
         <div className='h-full flex flex-row'>
-          <div className='w-2/5 h-full flex bg-[#e6dace]' ></div>
-          <div className='w-3/5 h-full' ></div>
+          <div className='w-full sm:w-2/5 h-full flex bg-[#e6dace]' ></div>
+          <div className='w-0 sm:w-3/5  h-full' ></div>
         </div>
-        <div className='w-full flex' >
-          <div className='top-44 left-44'>
+        <div className='w-full absolute top-1/4 left-0 grid grid-cols-6' >
+          <div className='col-start-3 col-span-2'>
             <div className=''>
               <div className="max-w-xs bg-[#f4ece6] shadow-md rounded-lg overflow-hidden">
                 <img className="object-cover h-48 w-full" src="image.jpg" alt="Card Image" />
@@ -61,7 +61,6 @@ function App() {
         </div>
 
       </div>
-
     </div>
   );
 }
