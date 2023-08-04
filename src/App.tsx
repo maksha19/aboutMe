@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import profile from './profile.jpg'
+import { FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function App() {
   return (
@@ -61,7 +62,24 @@ function App() {
                 <div className="grid justify-items-center mb-6">
                   <p className="text-gray-600 tracking-widest font-semibold uppercase">Senior Software Engineer</p>
                 </div>
-                <div className='h-20 bg-white'>
+                <div className='h-20 bg-white grid content-center'>
+                  <div className='grid grid-flow-col justify-items-center'>
+                    <div>
+                      <a data-testid="linkElement" href="https://www.instagram.com/makshavi/" target="_blank">
+                        <FaInstagram size={24}>  </FaInstagram>
+                      </a>
+                    </div>
+                    <div>
+                      <a data-testid="linkElement" href="https://www.linkedin.com/in/maksha/" target="_blank">
+                        <FaLinkedinIn size={24} />
+                      </a>
+                    </div>
+                    <div>
+                      <a data-testid="linkElement" href="https://wa.me/6583135769" target="_blank">
+                        <FaWhatsapp size={24} />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
