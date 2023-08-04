@@ -55,7 +55,7 @@ function App() {
             <div className='w-full h-full'>
               <div className="max-w-xs h-full bg-[#f4ece6] shadow-md rounded-lg overflow-hidden">
                 <div className='my-6'>
-                  <img className="w-48 h-48 rounded-full mx-auto" src={profile} alt="Card Image" />
+                  <img className="w-48 h-48 rounded-full mx-auto" src={profile} alt="Card" />
                 </div>
                 <div className="grid justify-items-center mb-5">
                   <div className='text-3xl font-extrabold font-sans text-gray-800 tracking-wide'>Manikandan</div>
@@ -70,17 +70,17 @@ function App() {
                 <div className='grid content-center h-20 bg-white '>
                   <div className='grid h-full grid-flow-col justify-items-center'>
                     <div>
-                      <a data-testid="linkElement" href="https://www.instagram.com/makshavi/" target="_blank">
+                      <a data-testid="linkElement" href="https://www.instagram.com/makshavi/" target="_blank" rel="noreferrer">
                         <FaInstagram size={24}>  </FaInstagram>
                       </a>
                     </div>
                     <div>
-                      <a data-testid="linkElement" href="https://www.linkedin.com/in/maksha/" target="_blank">
+                      <a data-testid="linkElement" href="https://www.linkedin.com/in/maksha/" target="_blank" rel="noreferrer">
                         <FaLinkedinIn size={24} />
                       </a>
                     </div>
                     <div>
-                      <a data-testid="linkElement" href="https://wa.me/6583135769" target="_blank">
+                      <a data-testid="linkElement" href="https://wa.me/6583135769" target="_blank" rel="noreferrer">
                         <FaWhatsapp size={24} />
                       </a>
                     </div>
