@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import profile from './profile.jpg'
 import { FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import ProjectPage from './subPage/projectPage';
 
 function App() {
   return (
@@ -45,7 +46,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='w-full h-screen relative'>
+      {/* <div className='w-full h-screen relative'>
         <div className='h-full flex flex-row'>
           <div className='w-full sm:w-2/5 h-full flex bg-[#e6dace]' ></div>
           <div className='w-0 sm:w-3/5  h-full' ></div>
@@ -112,7 +113,8 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ProjectPage/>
     </div>
   );
 }
