@@ -2,10 +2,12 @@ import React ,{useState} from 'react';
 import './App.css';
 import ProjectPage from './subPage/projectPage';
 import HomePage from './subPage/homePage';
+import ResumePage from './subPage/resumePage';
 
 function App() {
 
-  const [state, setState] = useState<"HOME" | "PROJECT" |"CONTACT">('HOME')
+  const [state, setState] = useState<"HOME" | "RESUME" |"PROJECT" |"CONTACT">('RESUME')
+
   return (
     <div className='w-full h-full' >
       <div className='w-full flex flex-row' >
@@ -29,7 +31,7 @@ function App() {
                 ABOUT ME
               </p>
             </div>
-            <div className='hover:cursor-pointer hover:text-blue-700'>
+           <div className='hover:cursor-pointer hover:text-blue-700' onClick={()=>setState('RESUME')}>
               <p className="text-sm px-4">
                 RESUME
               </p>
@@ -48,9 +50,11 @@ function App() {
         </div>
       </div>
       {
-        state === "HOME" ? <HomePage/> : state === "PROJECT" ? <ProjectPage/> : <HomePage/>
+        state === "HOME" ? <HomePage/> : 
+        state === "RESUME" ? <ResumePage/> :
+        state === "PROJECT" ? <ProjectPage/> : <HomePage/>
       }
-   
+      
     </div>
   );
 }

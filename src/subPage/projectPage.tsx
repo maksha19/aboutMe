@@ -26,7 +26,7 @@ const ProjectPage = () => {
 
         return projects.map((project) => {
             return (
-                <div className="grid grid-flow-row grid-cols-9 my-10">
+                <div className="grid grid-flow-row grid-cols-9 mt-10">
                     <div className="h-auto col-start-2 col-span-7 sm:col-start-3 sm:col-span-5">
                         <div className="flex h-full flex-col bg-white  p-4  leading-normal">
                             <div className="mt-8 text-center">
@@ -54,7 +54,7 @@ const ProjectPage = () => {
 
 
     return (
-        <div className="w-full h-screen bg-[#e6dace]">
+        <div className="w-full h-full bg-[#e6dace]">
             <div>
                 <div className="grid justify-items-center ">
                     <h1 className='my-6'>Projects</h1>
@@ -68,6 +68,7 @@ const ProjectPage = () => {
                 {listOfProject()}
 
             </div>
+            <div className="h-24" ></div>
         </div>
     )
 
