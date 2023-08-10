@@ -1,9 +1,11 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import './App.css';
-import profile from './profile.jpg'
-import { FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import ProjectPage from './subPage/projectPage';
+import HomePage from './subPage/homePage';
 
 function App() {
+
+  const [state, setState] = useState<"HOME" | "PROJECT" |"CONTACT">('HOME')
   return (
     <div className='w-full h-full' >
       <div className='w-full flex flex-row' >
@@ -22,17 +24,22 @@ function App() {
         </div>
         <div className='w-3/6 h-32  flex content-center' >
           <div className='flex w-full items-center justify-end mr-20'>
-            <div>
+          <div className='hover:cursor-pointer hover:text-blue-700' onClick={()=>setState('HOME')}>
               <p className="text-sm px-4">
                 ABOUT ME
               </p>
             </div>
-            <div>
+            <div className='hover:cursor-pointer hover:text-blue-700'>
+              <p className="text-sm px-4">
+                RESUME
+              </p>
+            </div>
+            <div className='hover:cursor-pointer hover:text-blue-700' onClick={()=>setState('PROJECT')}>
               <p className="text-sm px-4">
                 PROJECT
               </p>
             </div>
-            <div>
+            <div className='hover:cursor-pointer hover:text-blue-700'>
               <p className="text-sm px-4">
                 CONTACT
               </p>
@@ -40,55 +47,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='w-full h-screen relative'>
-        <div className='h-full flex flex-row'>
-          <div className='w-full sm:w-2/5 h-full flex bg-[#e6dace]' ></div>
-          <div className='w-0 sm:w-3/5  h-full' ></div>
-        </div>
-        <div className='w-full absolute top-16 sm:top-1/4 grid sm:grid-cols-12 grid-cols-8 gap-4'  >
-          <div className='sm:col-start-4 sm:col-span-3 col-start-2 col-span-6'>
-            <div className='w-full'>
-              <div className="max-w-xs bg-[#f4ece6] shadow-md rounded-lg overflow-hidden">
-                <div className='my-6'>
-                  <img className="w-48 h-48 rounded-full mx-auto" src={profile} alt="Card Image" />
-                </div>
-                <div className="grid justify-items-center mb-5">
-                  <div className='text-3xl font-extrabold font-sans text-gray-800 tracking-wide'>Manikandan</div>
-                  <div className='text-3xl font-extrabold font-sans text-gray-800 tracking-wide'>Shanmugam</div>
-                </div>
-                <div className="grid justify-items-center mb-5">
-                  <div className=" flex flex-grow border-t h-1 w-20 border-red-400"></div>
-                </div>
-                <div className="grid justify-items-center mb-6">
-                  <p className="text-gray-600 tracking-widest font-semibold uppercase">Senior Software Engineer</p>
-                </div>
-                <div className='h-20 bg-white grid content-center'>
-                  <div className='grid grid-flow-col justify-items-center'>
-                    <div>
-                      <a data-testid="linkElement" href="https://www.instagram.com/makshavi/" target="_blank">
-                        <FaInstagram size={24}>  </FaInstagram>
-                      </a>
-                    </div>
-                    <div>
-                      <a data-testid="linkElement" href="https://www.linkedin.com/in/maksha/" target="_blank">
-                        <FaLinkedinIn size={24} />
-                      </a>
-                    </div>
-                    <div>
-                      <a data-testid="linkElement" href="https://wa.me/6583135769" target="_blank">
-                        <FaWhatsapp size={24} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='sm:col-start-7 col-start-4'>
-            <p>Hello</p>
-          </div>
-        </div>
-      </div>
+      {
+        state === "HOME" ? <HomePage/> : state === "PROJECT" ? <ProjectPage/> : <HomePage/>
+      }
+   
     </div>
   );
 }
