@@ -6,7 +6,7 @@ import ResumePage from './subPage/resumePage';
 
 function App() {
 
-  const [state, setState] = useState<"HOME" | "RESUME" |"PROJECT" |"CONTACT">('RESUME')
+  const [state, setState] = useState<"HOME" | "RESUME" |"PROJECT" |"CONTACT">('HOME')
 
   return (
     <div className='w-full h-full' >
